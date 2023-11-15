@@ -25,6 +25,7 @@ public class VerifyError {
             inputPassword.sendKeys("");
 
 
+
             WebElement btnLogin = driver.findElement(By.id("login-button"));
             btnLogin.click();
 
@@ -32,6 +33,7 @@ public class VerifyError {
             System.out.println(h3error.getText());
                 getErrorMessage=h3error.getText();
 
+                System.out.println("Test");
             Assert.assertEquals(getErrorMessage,"Epic sadface: Password is required");
             driver.quit();
         }
