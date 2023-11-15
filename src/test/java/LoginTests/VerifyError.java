@@ -34,6 +34,7 @@ public class VerifyError {
                 getErrorMessage=h3error.getText();
 
                 System.out.println("Test");
+                System.out.println("Test");
             Assert.assertEquals(getErrorMessage,"Epic sadface: Password is required");
             driver.quit();
         }
